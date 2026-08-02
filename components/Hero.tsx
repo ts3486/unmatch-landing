@@ -1,7 +1,8 @@
 import Image from "next/image";
+import type { Dictionary } from "@/content";
 import { AppStoreButton } from "./AppStoreButton";
 
-export function Hero() {
+export function Hero({ dict }: { dict: Dictionary }) {
   return (
     <section
       className="relative overflow-hidden px-6 pb-24 pt-20 text-center"
@@ -12,19 +13,17 @@ export function Hero() {
     >
       <div className="mx-auto max-w-2xl">
         <h1 className="text-4xl font-extrabold tracking-tight text-text sm:text-5xl">
-          Take back your time from dating apps.
+          {dict.hero.headline}
         </h1>
-        <p className="mt-5 text-lg text-muted">
-          A calm, private tool for the swipe-check-spend cycle. Free. Offline. No account.
-        </p>
+        <p className="mt-5 text-lg text-muted">{dict.hero.subhead}</p>
         <div className="mt-8 flex justify-center">
-          <AppStoreButton />
+          <AppStoreButton dict={dict} />
         </div>
       </div>
       <div className="relative mx-auto mt-16 max-w-xs">
         <Image
           src="/screenshot-home.png"
-          alt="Unmatch app home screen showing the 60-second breathing reset"
+          alt={dict.hero.screenshotAlt}
           width={320}
           height={651}
           className="h-auto w-full rounded-[2rem] border border-border shadow-2xl"

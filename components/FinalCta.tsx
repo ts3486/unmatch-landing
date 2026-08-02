@@ -1,6 +1,7 @@
+import type { Dictionary } from "@/content";
 import { AppStoreButton } from "./AppStoreButton";
 
-export function FinalCta() {
+export function FinalCta({ dict }: { dict: Dictionary }) {
   return (
     <section
       className="px-6 py-24 text-center"
@@ -10,12 +11,10 @@ export function FinalCta() {
       }}
     >
       <div className="mx-auto max-w-xl">
-        <h2 className="text-3xl font-extrabold text-text">
-          Take back your time from dating apps.
-        </h2>
-        <p className="mt-4 text-muted">Free to download. Private by design.</p>
+        <h2 className="text-3xl font-extrabold text-text">{dict.finalCta.heading}</h2>
+        <p className="mt-4 text-muted">{dict.finalCta.sub}</p>
         <div className="mt-8 flex justify-center">
-          <AppStoreButton />
+          <AppStoreButton dict={dict} />
         </div>
       </div>
     </section>
