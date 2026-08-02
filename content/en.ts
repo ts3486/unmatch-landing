@@ -13,7 +13,7 @@ export const en: Dictionary = {
   hero: {
     headline: "Take back your time from dating apps.",
     subhead:
-      "A calm, private tool for the swipe-check-spend cycle. Free. Offline. No account.",
+      "A calm, private tool to break the swipe-check-spend cycle. Free. Offline. No account.",
     screenshotAlt: "Unmatch app home screen showing the 60-second breathing reset",
   },
   problem: {
@@ -23,6 +23,7 @@ export const en: Dictionary = {
       "Compulsive checking — especially late at night",
       "Spending on boosts and premium features you regret",
       "Feeling worse after using the app, not better",
+      "Refreshing the same chat, waiting for a reply that isn't coming",
     ],
   },
   affinity: {
@@ -30,6 +31,7 @@ export const en: Dictionary = {
     body: [
       "You've probably deleted the app before — and reinstalled it within a week.",
       "That's not a willpower problem. It's a design problem. Unmatch gives you something to do in the moment, instead of just white-knuckling it.",
+      "Some people call it an addiction. Whatever you call it, Unmatch gives you something to do about it — without lectures, without shame.",
     ],
   },
   solution: {
@@ -71,6 +73,7 @@ export const en: Dictionary = {
       "No subscription, no paywall",
       "No account required",
       "On-device only — nothing leaves your phone, not even to analytics",
+      "Not a blocking app — it won't lock you out or delete anything for you. It's a reset you choose to use",
     ],
   },
   narrowing: {

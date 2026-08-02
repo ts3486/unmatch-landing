@@ -11,11 +11,11 @@ export function Hero({ dict }: { dict: Dictionary }) {
           "linear-gradient(160deg, #0B1220 0%, #121C2E 40%, #1a1040 70%, #2d1050 100%)",
       }}
     >
-      <div className="mx-auto max-w-2xl">
+      <div className="mx-auto max-w-4xl">
         <h1 className="text-4xl font-extrabold tracking-tight text-text sm:text-5xl">
           {dict.hero.headline}
         </h1>
-        <p className="mt-5 text-lg text-muted">{dict.hero.subhead}</p>
+        <p className="mx-auto mt-5 max-w-2xl text-lg text-muted">{dict.hero.subhead}</p>
         <div className="mt-8 flex justify-center">
           <AppStoreButton dict={dict} />
         </div>
