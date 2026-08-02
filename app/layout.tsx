@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { APP_STORE_ID, SITE_URL } from "@/lib/constants";
+import { APP_STORE_ID, IS_INDEXABLE, SITE_URL } from "@/lib/constants";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -29,7 +29,11 @@ export const metadata: Metadata = {
     description,
     images: ["/og-image.png"],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: IS_INDEXABLE,
+    follow: IS_INDEXABLE,
+    googleBot: { index: IS_INDEXABLE, follow: IS_INDEXABLE },
+  },
   other: {
     "apple-itunes-app": `app-id=${APP_STORE_ID}`,
   },
