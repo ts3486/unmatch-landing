@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { getDictionary } from "@/content";
 import { APP_STORE_ID, IS_INDEXABLE, SITE_URL } from "@/lib/constants";
@@ -75,7 +76,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={inter.variable}>
-      <body className="bg-bg font-sans text-text antialiased">{children}</body>
+      <body className="bg-bg font-sans text-text antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
