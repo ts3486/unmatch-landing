@@ -2,7 +2,7 @@ import type { Dictionary } from "./types";
 
 export const ja: Dictionary = {
   meta: {
-    title: "Unmatch — マッチングアプリから距離を置こう",
+    title: "Unmatch — マッチングアプリ防止",
     description:
       "Unmatchは、マッチングアプリの「スワイプ・チェック・課金」のループを防止するための無料アプリです。60秒のリセット、アカウント不要、オフライン対応。",
   },
@@ -11,7 +11,7 @@ export const ja: Dictionary = {
     appStore: "App Store",
   },
   hero: {
-    headline: "マッチングアプリから距離を置こう",
+    headline: "マッチングアプリ防止のためのアプリ、Unmatch",
     subhead:
       "「スワイプ・チェック・課金」のループ防止のための、静かでプライベートなツール。無料。オフライン。アカウント不要。",
     screenshotAlt: "Unmatchのホーム画面。60秒の呼吸リセットが表示されています",
