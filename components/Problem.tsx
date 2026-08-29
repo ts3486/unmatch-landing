@@ -12,9 +12,10 @@ export function Problem({ dict }: { dict: Dictionary }) {
           {dict.problem.bullets.map((bullet) => (
             <li
               key={bullet}
-              className="rounded-xl border border-border bg-bg px-5 py-4 text-text"
+              className="flex items-start gap-3 rounded-xl border border-border border-l-2 border-l-warning/60 bg-bg px-5 py-4 text-text"
             >
-              {bullet}
+              <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-warning" />
+              <span>{bullet}</span>
             </li>
           ))}
         </ul>

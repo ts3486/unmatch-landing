@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { Dictionary } from "@/content";
 import { AppStoreButton } from "./AppStoreButton";
+import { PhoneFrame } from "./PhoneFrame";
 
 export function Hero({ dict }: { dict: Dictionary }) {
   return (
@@ -20,16 +20,14 @@ export function Hero({ dict }: { dict: Dictionary }) {
           <AppStoreButton dict={dict} />
         </div>
       </div>
-      <div className="relative mx-auto mt-16 max-w-xs">
-        <Image
-          src="/screenshot-home.png"
-          alt={dict.hero.screenshotAlt}
-          width={320}
-          height={651}
-          className="h-auto w-full rounded-[2rem] border border-border shadow-2xl"
-          priority
-        />
-      </div>
+      <PhoneFrame
+        src="/screenshot-home.png"
+        alt={dict.hero.screenshotAlt}
+        width={320}
+        height={651}
+        priority
+        className="mx-auto mt-16 max-w-[260px]"
+      />
     </section>
   );
 }
