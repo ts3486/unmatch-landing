@@ -91,8 +91,5 @@ export const ja: Dictionary = {
     heading: "マッチングアプリから距離を置こう",
     sub: "ダウンロードは無料。プライバシーを最優先に設計。",
   },
-  footer: {
-    privacy: "プライバシー",
-  },
   logoAlt: "Unmatchのロゴ",
 };

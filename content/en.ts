@@ -88,8 +88,5 @@ export const en: Dictionary = {
     heading: "Take back your time from dating apps.",
     sub: "Free to download. Private by design.",
   },
-  footer: {
-    privacy: "Privacy",
-  },
   logoAlt: "Unmatch logo",
 };

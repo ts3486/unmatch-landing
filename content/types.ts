@@ -43,8 +43,5 @@ export type Dictionary = {
     heading: string;
     sub: string;
   };
-  footer: {
-    privacy: string;
-  };
   logoAlt: string;
 };
