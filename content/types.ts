@@ -10,6 +10,7 @@ export type Dictionary = {
   hero: {
     headline: string;
     subhead: string;
+    screenshotSrc: string;
     screenshotAlt: string;
   };
   problem: {
@@ -26,7 +27,9 @@ export type Dictionary = {
     stepLabel: string;
     steps: { title: string; detail: string }[];
     features: { title: string; detail: string }[];
+    checkinSrc: string;
     checkinAlt: string;
+    progressSrc: string;
     progressAlt: string;
   };
   offer: {

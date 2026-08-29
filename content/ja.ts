@@ -14,11 +14,12 @@ export const ja: Dictionary = {
     headline: "マッチングアプリ防止のためのアプリ、Unmatch",
     subhead:
       "「スワイプ・チェック・課金」のループ防止のための、静かでプライベートなツール。無料。オフライン。アカウント不要。",
+    screenshotSrc: "/screenshot-home-ja.png",
     screenshotAlt: "Unmatchのホーム画面。60秒の呼吸リセットが表示されています",
   },
   problem: {
     heading: "マッチングアプリは、スワイプが止まらないように作られています。",
-    lede: "通知も、連続記録も、ブーストも — すべて偶然ではありません。",
+    lede: "ティンダー、ウィズ（with）やタップル — 通知も、連続記録も、ブーストも、すべて偶然ではありません。",
     bullets: [
       "つい何度も開いてしまう — 特に夜遅くに",
       "後悔するブーストや有料機能への課金",
@@ -29,9 +30,9 @@ export const ja: Dictionary = {
   affinity: {
     heading: "パターンには、もう気づいているはずです。",
     body: [
-      "一度アプリを消したことがあるかもしれません — そして1週間以内に入れ直した。",
+      "一度ティンダー、ウィズ（with）やタップルを消した、 — そして1週間以内に入れ直した経験はりませんか？",
       "それは意志の弱さの問題ではなく、設計の問題です。Unmatchは、ただ我慢するのではなく、その瞬間にできることを用意します。",
-      "中毒や依存と呼ぶ人もいます。呼び方はどうであれ、Unmatchは説教や罪悪感なしに、できることを用意します。",
+      "中毒や依存と呼ぶ人もいます。呼び方はどうであれ、Unmatchは説教や罪悪感なしに、依存を克服するためのツールです。",
     ],
   },
   solution: {
@@ -65,8 +66,10 @@ export const ja: Dictionary = {
         detail: "きっかけと習慣について学ぶ、短い毎日のレッスン。",
       },
     ],
+    checkinSrc: "/screenshot-checkin-ja.png",
     checkinAlt:
       "Unmatchのデイリーチェックイン画面。気分・疲れ・衝動の強さを記録できます",
+    progressSrc: "/screenshot-progress-ja.png",
     progressAlt: "Unmatchの進捗画面。チェックインの連続記録と週間統計が表示されています",
   },
   offer: {

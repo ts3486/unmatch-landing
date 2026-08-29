@@ -10,7 +10,7 @@ import {
   IconTarget,
   IconTrendUp,
 } from "./icons";
-import { PhoneFrame } from "./PhoneFrame";
+import { FramedScreenshot } from "./FramedScreenshot";
 
 const stepIcons = [IconTarget, IconBreath, IconChecklist, IconNote];
 const featureIcons = [IconShieldPulse, IconCardPause, IconCalendarCheck, IconTrendUp, IconBookOpen];
@@ -43,19 +43,21 @@ export function Solution({ dict }: { dict: Dictionary }) {
 
         <div className="mt-16 grid gap-10 md:grid-cols-2 md:items-center">
           <div className="flex justify-center gap-3 sm:gap-4">
-            <PhoneFrame
-              src="/screenshot-checkin.png"
+            <FramedScreenshot
+              src={dict.solution.checkinSrc}
               alt={dict.solution.checkinAlt}
-              width={220}
-              height={448}
+              width={779}
+              height={1600}
               className="w-full max-w-[150px] sm:max-w-[220px]"
+              frameClassName="rounded-[19px] sm:rounded-[28px]"
             />
-            <PhoneFrame
-              src="/screenshot-progress.png"
+            <FramedScreenshot
+              src={dict.solution.progressSrc}
               alt={dict.solution.progressAlt}
-              width={220}
-              height={448}
+              width={779}
+              height={1600}
               className="w-full max-w-[150px] sm:max-w-[220px]"
+              frameClassName="rounded-[19px] sm:rounded-[28px]"
             />
           </div>
           <ul className="grid gap-4 sm:grid-cols-2">

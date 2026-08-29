@@ -1,6 +1,6 @@
 import type { Dictionary } from "@/content";
 import { AppStoreButton } from "./AppStoreButton";
-import { PhoneFrame } from "./PhoneFrame";
+import { FramedScreenshot } from "./FramedScreenshot";
 
 export function Hero({ dict }: { dict: Dictionary }) {
   return (
@@ -20,14 +20,30 @@ export function Hero({ dict }: { dict: Dictionary }) {
           <AppStoreButton dict={dict} />
         </div>
       </div>
-      <PhoneFrame
-        src="/screenshot-home.png"
-        alt={dict.hero.screenshotAlt}
-        width={320}
-        height={651}
-        priority
-        className="mx-auto mt-16 max-w-[260px]"
-      />
+      <div className="mx-auto mt-16 flex max-w-4xl items-center justify-center gap-4 sm:gap-8 lg:gap-10">
+        <FramedScreenshot
+          src={dict.solution.checkinSrc}
+          alt={dict.solution.checkinAlt}
+          width={779}
+          height={1600}
+          className="w-full min-w-0 max-w-[76px] sm:max-w-[150px] lg:max-w-[200px]"
+        />
+        <FramedScreenshot
+          src={dict.hero.screenshotSrc}
+          alt={dict.hero.screenshotAlt}
+          width={779}
+          height={1600}
+          priority
+          className="w-full min-w-0 max-w-[76px] sm:max-w-[150px] lg:max-w-[200px]"
+        />
+        <FramedScreenshot
+          src={dict.solution.progressSrc}
+          alt={dict.solution.progressAlt}
+          width={779}
+          height={1600}
+          className="w-full min-w-0 max-w-[76px] sm:max-w-[150px] lg:max-w-[200px]"
+        />
+      </div>
     </section>
   );
 }

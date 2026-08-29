@@ -14,11 +14,12 @@ export const en: Dictionary = {
     headline: "Take back your time from dating apps.",
     subhead:
       "A calm, private tool to break the swipe-check-spend cycle. Free. Offline. No account.",
+    screenshotSrc: "/screenshot-home-en.png",
     screenshotAlt: "Unmatch app home screen showing the 60-second breathing reset",
   },
   problem: {
     heading: "Dating apps are built to keep you swiping.",
-    lede: "The notifications, the streaks, the boosts — they're not accidents.",
+    lede: "The notifications, the streaks, the boosts on Tinder, Hinge, and Bumble — they're not accidents.",
     bullets: [
       "Compulsive checking — especially late at night",
       "Spending on boosts and premium features you regret",
@@ -29,7 +30,7 @@ export const en: Dictionary = {
   affinity: {
     heading: "You already know it's a pattern.",
     body: [
-      "You've probably deleted the app before — and reinstalled it within a week.",
+      "You've probably deleted Tinder, Hinge, or Bumble before — and reinstalled it within a week.",
       "That's not a willpower problem. It's a design problem. Unmatch gives you something to do in the moment, instead of just white-knuckling it.",
       "Some people call it an addiction. Whatever you call it, Unmatch gives you something to do about it — without lectures, without shame.",
     ],
@@ -62,8 +63,10 @@ export const en: Dictionary = {
         detail: "Short daily lessons on triggers and habits.",
       },
     ],
+    checkinSrc: "/screenshot-checkin-en.png",
     checkinAlt:
       "Unmatch daily check-in screen for tracking mood, fatigue, and urge levels",
+    progressSrc: "/screenshot-progress-en.png",
     progressAlt: "Unmatch progress screen showing check-in streaks and weekly stats",
   },
   offer: {
